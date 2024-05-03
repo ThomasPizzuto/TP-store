@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">Banner</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="filter">
+            <button>Filter</button>
+        </div>
+        <div class="shopping-cart">
+            <button>Cart</button>
+        </div>
+    </header>
+    <main>
+        <div class="product-grid">
+            <div class="product">
+                <img src="placeholder.png" alt="Product Image">
+                <p class="price">$100</p>
+                <p class="description">Product Description</p>
+            </div>
+            <!-- Repeat the product div for each product -->
+        </div>
+        <div class="related-products">
+            Related Products
+        </div>
+    </main>
+    <footer>
+        Footer Content
+    </footer>
+</body>
+</html>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.banner, .search-bar, .filter, .shopping-cart {
+    flex: 1;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.related-products {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
